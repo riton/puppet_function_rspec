@@ -1,0 +1,6 @@
+#
+class puppetrspec(
+    $ensure = 'something'
+) {
+
+}
