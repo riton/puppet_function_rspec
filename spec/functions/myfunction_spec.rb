@@ -23,7 +23,8 @@ describe 'myfunction', :type => :puppet_function do
     # other way to do it according to
     # https://github.com/rodjek/rspec-puppet#specifying-the-arguments-to-pass-to-the-function
     it "shouldn't fail with run()" do
-      should run.with_params().and_raise_error(Puppet::ParseError, /alway RAISE 'RedHat'/)
+      should run.and_raise_error(Puppet::ParseError, /alway RAISE 'RedHat'/)
+      #should run.with_params().and_raise_error(Puppet::ParseError, /alway RAISE 'RedHat'/)
     end
 
    end
